@@ -8,14 +8,24 @@ const breakpoints = {
   "2xl": "96em", // 1536px
 };
 
-const theme = extendTheme({
-  colors: {
-    darkGreen: "#18534F",
-    middleGreen: "#226D68",
-    white: "#ECF8FC",
-    sandBeige: "#FEEAA1",
-    lightOrange: "#D6955B",
+const theme = extendTheme(
+  {
+    colors: {
+      darkGreen: "#18534F",
+      middleGreen: "#226D68",
+      white: "#ECF8FC",
+      sandBeige: "#FEEAA1",
+      lightOrange: "#D6955B",
+    },
+    styles: {
+      global: () => ({
+        body: {
+          bg: "#FFFFFF",
+        },
+      }),
+    },
   },
-});
+  { breakpoints }
+);
 
 export default theme;
