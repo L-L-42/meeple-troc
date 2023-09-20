@@ -10,6 +10,10 @@ import {
 
 import natureMorteBoardgame from "../assets/landing_page/nature_morte_boardgame.jpg";
 import toyDonation from "../assets/landing_page/toy_donation.jpg";
+import account from "../assets/landing_page/account.jpg";
+import toyBox from "../assets/landing_page/toyBox.jpg";
+import arrowTransaction from "../assets/landing_page/arrow_transaction.jpg";
+import familyPlaying from "../assets/landing_page/family_playing.jpg";
 
 export default function LandingPage() {
   return (
@@ -82,8 +86,7 @@ export default function LandingPage() {
       </Container>
       <Container maxWidth="5xl">
         <Text fontSize="3xl" mt="2rem" textAlign="center">
-          Equipez vous du logiciel de gestion de place d’accueil de jeunes
-          enfants le plus complet
+          Gérez votre ludothèque et/ou coffre à jouet avant de les échanger
         </Text>
       </Container>
       <Flex
@@ -96,33 +99,63 @@ export default function LandingPage() {
           spacing="10rem"
           textAlign="center"
         >
-          <Box w="100%" bg="#FED7E2" h="16rem" rounded="2xl">
-            <Flex m="3rem">
-              {/* <img src={imageCle} alt="drawing of someone with a key" /> */}
+          <Box w="100%" bg="middleGreen" h="16rem" rounded="2xl">
+            <Flex alignItems="center" flexDirection="column" m="3rem">
+              <Image
+                borderRadius="full"
+                boxSize="150px"
+                src={account}
+                alt="girl create account"
+              />
+              <Text pt="2" color="white">
+                Créez un compte gratuit
+              </Text>
             </Flex>
-            <Text>Communiquez avec les parents</Text>
           </Box>
 
-          <Box w="100%" bg="#E9D8FD" h="16rem" rounded="2xl">
-            <Flex m="3rem">
-              {/* <img src={imageTemps} alt="drawing of someone with a laptop" /> */}
+          <Box w="100%" bg="lightOrange" h="16rem" rounded="2xl">
+            <Flex alignItems="center" flexDirection="column" m="1.5rem">
+              <Image
+                borderRadius="3.5"
+                boxSize="150px"
+                src={toyBox}
+                alt="coffre à jouet"
+              />
+              <Text pt="2" color="white">
+                ajoutez vos jeux, vos jouets
+                <br />
+                que vous souhaitez échanger
+              </Text>
             </Flex>
-            <Text mt="4rem">Soyez alertés</Text>
           </Box>
-          <Box w="100%" bg="#C6F6D5" h="16rem" rounded="2xl">
-            <Flex m="3rem">
-              {/* <img src={imageImprime} alt="drawing of a printer" /> */}
+          <Box w="100%" bg="sandBeige" h="16rem" rounded="2xl">
+            <Flex flexDirection="column" alignItems="center" m="1.5rem">
+              <Image
+                borderRadius="3.5"
+                boxSize="150px"
+                src={arrowTransaction}
+                alt="flèches représentant un échange"
+              />
+              <Text pt="2">
+                Echangez avec
+                <br />
+                les autres Meeples
+              </Text>
             </Flex>
-            <Text mt="4rem">Présentez votre crèche</Text>
           </Box>
           <Box w="100%" bg="#bee3f8" h="16rem" rounded="2xl">
-            <Flex m="2rem">
-              {/* <img
-                src={imageLoupe}
-                alt="drawing of someone with a magnifying glass"
-              /> */}
+            <Flex flexDir="column" alignItems="center" m="1.5rem">
+              <Image
+                borderRadius="full"
+                boxSize="150px"
+                src={familyPlaying}
+                alt="famille qui joue à un jeu de société"
+              />
+              <Text pt="2">
+                jouez avec
+                <br /> vos trouvailles !
+              </Text>
             </Flex>
-            <Text mt="3rem">Améliorez votre visibilité</Text>
           </Box>
         </SimpleGrid>
       </Flex>
@@ -134,9 +167,9 @@ export default function LandingPage() {
         mt="10rem"
       >
         <Flex justifyContent="space-between">
-          <Text fontSize={{ base: "13" }}>2023 © Babyplace</Text>
+          <Text fontSize={{ base: "13" }}>2023 © Meeple-Troc</Text>
           <Text fontSize={{ base: "13" }} ml={{ base: "5rem" }}>
-            Créé avec Wild Code School x Babyplace
+            Créé et développé par Luc Lefebure
           </Text>
         </Flex>
       </Flex>

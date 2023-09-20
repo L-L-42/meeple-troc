@@ -14,7 +14,7 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box bg={useColorModeValue("darkGreen")} px={6}>
+    <Box bg={useColorModeValue("darkGreen")} px={6} p="2">
       <Flex alignItems="center" justifyContent="space-between">
         {/* Logo et Nom du site */}
         <Link to="/">
@@ -37,7 +37,7 @@ export default function Navbar() {
         >
           <Link to="/link1">Link 1</Link>
           <Link to="/link2">Link 2</Link>
-          <Link to="/link3">Link 3</Link>
+          <Link to="/faq">FAQ</Link>
         </Flex>
 
         {/* Menu burger pour mobile */}
@@ -55,7 +55,7 @@ export default function Navbar() {
           {/* Ajoutez ici vos liens de navigation pour la version mobile */}
           <Link to="/link1">Link 1</Link>
           <Link to="/link2">Link 2</Link>
-          <Link to="/link3">Link 3</Link>
+          <Link to="/faq">FAQ</Link>
         </Box>
       )}
     </Box>
